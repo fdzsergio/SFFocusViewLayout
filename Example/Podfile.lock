@@ -1,0 +1,14 @@
+PODS:
+  - SFFocusViewLayout (0.1.0)
+
+DEPENDENCIES:
+  - SFFocusViewLayout (from `../`)
+
+EXTERNAL SOURCES:
+  SFFocusViewLayout:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SFFocusViewLayout: 382a138fbd4258109561513757d9580986a59a0f
+
+COCOAPODS: 0.38.2

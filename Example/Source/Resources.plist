@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>Verlag</string>
+		<key>detail</key>
+		<string>The affable Modernist</string>
+		<key>background</key>
+		<string>background-1</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Archer</string>
+		<key>detail</key>
+		<string>The colorful slab serif</string>
+		<key>background</key>
+		<string>background-2</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Forza</string>
+		<key>detail</key>
+		<string>Articulate meets assertive</string>
+		<key>background</key>
+		<string>background-3</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Gotham</string>
+		<key>detail</key>
+		<string>What letters look like</string>
+		<key>background</key>
+		<string>background-4</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Knockout</string>
+		<key>detail</key>
+		<string>The functional family</string>
+		<key>background</key>
+		<string>background-5</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Landmark</string>
+		<key>detail</key>
+		<string>An architectural letter</string>
+		<key>background</key>
+		<string>background-6</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Mercury</string>
+		<key>detail</key>
+		<string>Spirited, subtle, ferocious</string>
+		<key>background</key>
+		<string>background-7</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Quarto</string>
+		<key>detail</key>
+		<string>Dark and mysterious, eloquent and bright</string>
+		<key>background</key>
+		<string>background-8</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Requiem</string>
+		<key>detail</key>
+		<string>A true renaissance letter</string>
+		<key>background</key>
+		<string>background-9</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Sentinel</string>
+		<key>detail</key>
+		<string>The slab serif that works</string>
+		<key>background</key>
+		<string>background-10</string>
+	</dict>
+</array>
+</plist>
