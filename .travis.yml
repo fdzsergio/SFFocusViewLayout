@@ -5,5 +5,5 @@ install:
 - pod install --project-directory=Example
 
 script:
-- set -o pipefail && xcodebuild test -workspace Example.xcworkspace -scheme Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
+- set -o pipefail && xcodebuild test -workspace Example/Example.xcworkspace -scheme Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
 - pod lib lint --quick
