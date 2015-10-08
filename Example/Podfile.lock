@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SFFocusViewLayout: ef937291da0c4721db931b8b2d1e1e79b5b6bf1a
+  SFFocusViewLayout: eb09a0db0ffc88215a05465eea5f6d94cd524af6
 
 COCOAPODS: 0.38.2
