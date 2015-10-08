@@ -4,12 +4,12 @@ Pod::Spec.new do |s|
   s.summary          = "UICollectionViewLayout with focused content."
 
   s.description      = <<-DESC
-                        UICollectionViewLayout subclass for displaying focused content 
-                        on UICollectionView which is the largest cell of all.
+                          SFFocusViewLayout is a UICollectionViewLayout subclass 
+                          for displaying focused content on UICollectionView which
+                          is the largest cell of all.
                        DESC
-
   s.homepage         = "https://github.com/fdzsergio/SFFocusViewLayout"
-  # s.screenshots     = "https://github.com/fdzsergio/SFFocusViewLayout/gifs/example.gif",   
+  s.screenshots      = "https://raw.githubusercontent.com/fdzsergio/SFFocusViewLayout/master/Screenshots/SFFocusViewLayout.gif"
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { "Sergio Fernández" => "fdz.sergio@gmail.com" }
   s.source           = { :git => "https://github.com/fdzsergio/SFFocusViewLayout.git", :tag => s.version.to_s }
