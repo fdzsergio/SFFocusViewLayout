@@ -9,9 +9,8 @@
 SFFocusViewLayout is a UICollectionViewLayout subclass for displaying focused content on UICollectionView which is the largest cell of all.
 
 <p align="center" >
-<img src="http://f.cl.ly/items/1K1j0D1m1r1v2y0B1i47/example.gif" alt="SFFocusViewLayout" title="SFFocusViewLayout">
+	<img src="https://camo.githubusercontent.com/06041f1c7b3ecd3dd616dd7ba51e76adb60b7f9e/687474703a2f2f662e636c2e6c792f6974656d732f314b316a3044316d3172317632793042316934372f6578616d706c652e676966" alt="SFFocusViewLayout" title="SFFocusViewLayout">
 </p>
-
 
 ## Usage
 
@@ -44,6 +43,10 @@ pod "SFFocusViewLayout"
 ## Author
 
 Sergio Fernández, fdz.sergio@gmail.com
+
+## Acknowledgement
+
+This [CocoaPods](https://cocoapods.org/pods/SFFocusViewLayout/) is heavily inspired by the Ultravisual example of [Ray Wenderlich](http://www.raywenderlich.com/99087/swift-expanding-cells-ios-collection-views).
 
 ## License
 
