@@ -1,0 +1,21 @@
+machine:
+	xcode:
+		version: "7.0"
+dependencies:
+	pre:
+		- sudo gem install cocoapods --version 0.38.2
+    - pod setup
+    - pod install --project-directory=Example
+test:
+  override:
+    - xctool 
+		CODE_SIGNING_REQUIRED=NO
+		CODE_SIGN_IDENTITY= 
+		PROVISIONING_PROFILE= 
+		-destination 'platform=iOS Simulator,name=iPhone 6,OS=latest' 
+		-sdk iphonesimulator 
+		-workspace Example/Example.xcworkspace 
+		-scheme "Example" 
+		build build-tests run-tests
+    - pod lib lint --quick
+	
