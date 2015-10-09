@@ -1,5 +1,8 @@
 # SFFocusViewLayout CHANGELOG
 
+## 1.1.0
+Added Xcode 6.4 support
+
 ## 1.0.1
 
 Change pod structure.

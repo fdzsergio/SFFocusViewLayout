@@ -74,7 +74,7 @@ static CGFloat const kSFFocusViewLayoutDragOffset = 180.f;
 }
 
 // Return all attributes in the cache whose frame intersects with the rect passed to the method 
-- (NSArray<UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect
+- (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect
 {
     // create layouts for the rectangles in the view
     NSMutableArray *layoutAttributes = [NSMutableArray array];

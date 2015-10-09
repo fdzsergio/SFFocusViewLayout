@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "SFFocusViewLayout"
-  s.version          = "1.0.1"
-  s.summary          = "UICollectionViewLayout with focused content."
+  s.version          = "1.1.0"
+  s.summary          = "UICollectionViewLayout subclass with focused content."
 
   s.description      = <<-DESC
                           SFFocusViewLayout is a UICollectionViewLayout subclass 

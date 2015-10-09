@@ -21,7 +21,7 @@
 
 - (void)loadResources
 {
-    NSMutableArray<SFResource *> *resources = [NSMutableArray array];
+    NSMutableArray *resources = [NSMutableArray array];
     NSURL *fileURL = [[NSBundle mainBundle] URLForResource:@"Resources"
                                              withExtension:@"plist"];
 

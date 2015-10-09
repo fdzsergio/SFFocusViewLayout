@@ -1,6 +1,6 @@
 # SFFocusViewLayout
 
-[![CI Status](http://img.shields.io/travis/Sergio Fernández/SFFocusViewLayout.svg?style=flat)](https://travis-ci.org/fdzsergio/SFFocusViewLayout)
+[![CI Status](http://img.shields.io/travis/fdzsergio/SFFocusViewLayout.svg?style=flat)](https://travis-ci.org/fdzsergio/SFFocusViewLayout)
 [![Version](https://img.shields.io/cocoapods/v/SFFocusViewLayout.svg?style=flat)](http://cocoapods.org/pods/SFFocusViewLayout)
 [![License](https://img.shields.io/cocoapods/l/SFFocusViewLayout.svg?style=flat)](http://cocoapods.org/pods/SFFocusViewLayout)
 [![Platform](https://img.shields.io/cocoapods/p/SFFocusViewLayout.svg?style=flat)](http://cocoapods.org/pods/SFFocusViewLayout)
@@ -39,7 +39,7 @@ pod "SFFocusViewLayout"
 
 ## Upcoming
 - Carthage support
-- Swift vresion
+- Swift version
 
 ## Author
 
