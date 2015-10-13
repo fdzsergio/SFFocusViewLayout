@@ -1,9 +1,15 @@
 language: objective-c
+os: osx
+osx_image: xcode7
 
 install:
 - gem install cocoapods xcpretty --no-rdoc --no-ri --no-document --quiet
+- pod setup
 - pod install --project-directory=Example
 
 script:
-# - set -o pipefail && xcodebuild test -workspace Example/Example.xcworkspace -scheme Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
-- pod lib lint --quick
+- set -o pipefail && xcodebuild test -workspace Example/Example.xcworkspace -scheme Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
+- pod lib lint SFFocusViewLayout.podspec --quick 
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
