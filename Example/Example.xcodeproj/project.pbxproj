@@ -31,7 +31,7 @@
 		E7F15CB51BC474FF00906943 /* SFParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F15CB41BC474FF00906943 /* SFParser.m */; settings = {ASSET_TAGS = (); }; };
 		E7F15CB81BC4756D00906943 /* UIImage+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F15CB71BC4756D00906943 /* UIImage+Helper.m */; settings = {ASSET_TAGS = (); }; };
 		E7F15CBB1BC4777900906943 /* SFPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F15CBA1BC4777900906943 /* SFPresenter.m */; settings = {ASSET_TAGS = (); }; };
-		F09355DA40F01D15382B731E /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8C8E1BD7B9CE4EDD7B165F /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		F09355DA40F01D15382B731E /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8C8E1BD7B9CE4EDD7B165F /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -309,6 +309,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
+				84F1EC0356A01555AB55B67E /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -395,6 +396,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		84F1EC0356A01555AB55B67E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6003F586195388D20070C39A /* Sources */ = {
