@@ -48,7 +48,7 @@ Sergio Fernández, fdz.sergio@gmail.com
 
 ## Acknowledgement
 
-This [CocoaPods](https://cocoapods.org/pods/SFFocusViewLayout/) is heavily inspired by the Ultravisual example of [Ray Wenderlich](http://www.raywenderlich.com/99087/swift-expanding-cells-ios-collection-views).
+This [CocoaPod](https://cocoapods.org/pods/SFFocusViewLayout) is heavily inspired by the Ultravisual example of [Ray Wenderlich](http://www.raywenderlich.com/99087/swift-expanding-cells-ios-collection-views).
 
 ## License
 
