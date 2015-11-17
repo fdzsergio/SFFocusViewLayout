@@ -9,7 +9,9 @@
 SFFocusViewLayout is a UICollectionViewLayout subclass for displaying focused content on UICollectionView which is the largest cell of all.
 
 <p align="center" >
-	<img src="https://raw.githubusercontent.com/fdzsergio/SFFocusViewLayout/master/Screenshots/SFFocusViewLayout.gif" alt="SFFocusViewLayout" title="SFFocusViewLayout">
+  
+	<img src="./Screenshots/SFFocusViewLayout.gif" alt="SFFocusViewLayout" title="SFFocusViewLayout">
+
 </p>
 
 ## Usage
