@@ -83,6 +83,16 @@ static NSString * const kSFCollectionViewReuseIdentifier = @"__kSFCollectionView
     [SFPresenter present:resource inView:cell];
 }
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    SFFocusViewLayout *focusViewLayout = (SFFocusViewLayout *)collectionView.collectionViewLayout;
+
+    CGFloat offset = focusViewLayout.dragOffset * indexPath.item;
+    if (collectionView.contentOffset.y != offset) {
+        [collectionView setContentOffset:CGPointMake(0, offset) animated:YES];
+    }
+}
+
 #pragma mark - Private methods
 
 - (NSArray *)resources
