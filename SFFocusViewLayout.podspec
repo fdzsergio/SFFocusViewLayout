@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "SFFocusViewLayout"
-  s.version          = "1.1.1"
+  s.version          = "2.0.0"
   s.summary          = "UICollectionViewLayout subclass with focused content."
 
   s.description      = <<-DESC
@@ -8,6 +8,7 @@ Pod::Spec.new do |s|
                           for displaying focused content on UICollectionView which
                           is the largest cell of all.
                        DESC
+                       
   s.homepage         = "https://github.com/fdzsergio/SFFocusViewLayout"
   s.screenshots      = "https://raw.githubusercontent.com/fdzsergio/SFFocusViewLayout/master/Screenshots/SFFocusViewLayout.gif"
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -15,9 +16,11 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/fdzsergio/SFFocusViewLayout.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/fdzsergio'
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '8.0'
   s.requires_arc = true
 
-  s.source_files = 'SFFocusViewLayout/Classes/**/*'
+  s.source_files = 'Classes/*.{h,m}'
   s.frameworks = 'UIKit'
+  
+  s.ios.deployment_target = '8.0'
 end

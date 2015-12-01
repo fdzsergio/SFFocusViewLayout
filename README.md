@@ -2,7 +2,9 @@
 
 [![CI Status](http://img.shields.io/travis/fdzsergio/SFFocusViewLayout.svg?style=flat)](https://travis-ci.org/fdzsergio/SFFocusViewLayout)
 [![Version](https://img.shields.io/cocoapods/v/SFFocusViewLayout.svg?style=flat)](http://cocoapods.org/pods/SFFocusViewLayout)
+[![codecov.io](https://img.shields.io/codecov/c/github/fdzsergio/SFFocusViewLayout.svg)](http://codecov.io/github/fdzsergio/SFFocusViewLayout)
 [![License](https://img.shields.io/cocoapods/l/SFFocusViewLayout.svg?style=flat)](http://cocoapods.org/pods/SFFocusViewLayout)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Platform](https://img.shields.io/cocoapods/p/SFFocusViewLayout.svg?style=flat)](http://cocoapods.org/pods/SFFocusViewLayout)
 
 ## Overview
@@ -37,10 +39,17 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "SFFocusViewLayout"
 ```
+### Carthage
+
+You can also install it via [Carthage](https://github.com/Carthage/Carthage). To do so, add the following to your Cartfile:
+
+```ruby
+github "fdzsergio/SFFocusViewLayout"
+```
 
 ## Upcoming
-- Carthage support
-- Swift version
+- [x] Carthage support
+- [x] Swift compatible
 
 ## Author
 

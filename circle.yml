@@ -1,0 +1,8 @@
+machine:
+  xcode:
+    version: "7.1"
+    
+test:
+  override:
+    xctool -project SFFocusViewLayout.xcodeproj -scheme SFFocusViewLayout -sdk iphonesimulator build
+    
