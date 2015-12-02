@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49321DCB1C0EEF22000619E4 /* SFFocusViewLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49321DCA1C0EEF22000619E4 /* SFFocusViewLayout.framework */; };
+		49321DCD1C0EEF26000619E4 /* SFFocusViewLayout.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 49321DCA1C0EEF22000619E4 /* SFFocusViewLayout.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E74923A01C0E302700FF36E0 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = E74923871C0E302700FF36E0 /* Base.lproj */; };
 		E74923A31C0E302700FF36E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E749238A1C0E302700FF36E0 /* main.m */; };
 		E74923A41C0E302700FF36E0 /* Resources.plist in Resources */ = {isa = PBXBuildFile; fileRef = E749238B1C0E302700FF36E0 /* Resources.plist */; };
@@ -21,10 +23,24 @@
 		E74923AD1C0E302700FF36E0 /* SFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E749239B1C0E302700FF36E0 /* SFViewController.m */; };
 		E74923AE1C0E302700FF36E0 /* SFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E749239C1C0E302700FF36E0 /* SFViewController.xib */; };
 		E74923AF1C0E302700FF36E0 /* UIImage+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = E749239E1C0E302700FF36E0 /* UIImage+Helper.m */; };
-		E74923D21C0E337000FF36E0 /* SFFocusViewLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E74923D11C0E337000FF36E0 /* SFFocusViewLayout.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		49321DCE1C0EEF26000619E4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				49321DCD1C0EEF26000619E4 /* SFFocusViewLayout.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		49321DCA1C0EEF22000619E4 /* SFFocusViewLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SFFocusViewLayout.framework; path = Framework/SFFocusViewLayout.framework; sourceTree = "<group>"; };
 		E749236C1C0E2F9800FF36E0 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E74923871C0E302700FF36E0 /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Base.lproj; sourceTree = "<group>"; };
 		E74923891C0E302700FF36E0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,8 +65,6 @@
 		E749239C1C0E302700FF36E0 /* SFViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFViewController.xib; sourceTree = "<group>"; };
 		E749239D1C0E302700FF36E0 /* UIImage+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Helper.h"; sourceTree = "<group>"; };
 		E749239E1C0E302700FF36E0 /* UIImage+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Helper.m"; sourceTree = "<group>"; };
-		E74923BE1C0E31E700FF36E0 /* SFFocusViewLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SFFocusViewLayout.framework; path = "../build/Debug-iphoneos/SFFocusViewLayout.framework"; sourceTree = "<group>"; };
-		E74923D11C0E337000FF36E0 /* SFFocusViewLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SFFocusViewLayout.framework; path = "../build/Debug-iphoneos/SFFocusViewLayout.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E74923D21C0E337000FF36E0 /* SFFocusViewLayout.framework in Frameworks */,
+				49321DCB1C0EEF22000619E4 /* SFFocusViewLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,8 +116,7 @@
 		E74923B81C0E30BE00FF36E0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E74923D11C0E337000FF36E0 /* SFFocusViewLayout.framework */,
-				E74923BE1C0E31E700FF36E0 /* SFFocusViewLayout.framework */,
+				49321DCA1C0EEF22000619E4 /* SFFocusViewLayout.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -211,6 +224,7 @@
 				E74923681C0E2F9800FF36E0 /* Sources */,
 				E74923691C0E2F9800FF36E0 /* Frameworks */,
 				E749236A1C0E2F9800FF36E0 /* Resources */,
+				49321DCE1C0EEF26000619E4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -373,6 +387,10 @@
 		E74923841C0E2F9800FF36E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Framework",
+				);
 				INFOPLIST_FILE = "Source/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fdzsergio.Example;
@@ -383,6 +401,10 @@
 		E74923851C0E2F9800FF36E0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Framework",
+				);
 				INFOPLIST_FILE = "Source/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fdzsergio.Example;
