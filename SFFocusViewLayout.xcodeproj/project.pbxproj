@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E70C602A1C0CEF60005515BE /* SFFocusViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = E70C60291C0CEF60005515BE /* SFFocusViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E70C60321C0D0478005515BE /* SFFocusViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E70C60311C0D0478005515BE /* SFFocusViewLayout.m */; };
+		E78776321C1C82C50035201D /* SFCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E78776311C1C82C50035201D /* SFCollectionViewController.m */; };
 		E7D94EFB1C0E5AF00031B7BA /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D94EFA1C0E5AF00031B7BA /* Tests.m */; };
 		E7D94EFD1C0E5AF00031B7BA /* SFFocusViewLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E70C60261C0CEF60005515BE /* SFFocusViewLayout.framework */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,9 @@
 		E70C60291C0CEF60005515BE /* SFFocusViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFFocusViewLayout.h; sourceTree = "<group>"; };
 		E70C602B1C0CEF60005515BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E70C60311C0D0478005515BE /* SFFocusViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFFocusViewLayout.m; sourceTree = "<group>"; };
+		E78776301C1C82C50035201D /* SFCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCollectionViewController.h; sourceTree = "<group>"; };
+		E78776311C1C82C50035201D /* SFCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCollectionViewController.m; sourceTree = "<group>"; };
+		E78776331C1C8A1C0035201D /* SFFocusViewLayout+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SFFocusViewLayout+Private.h"; sourceTree = "<group>"; };
 		E7D94EF81C0E5AF00031B7BA /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7D94EFA1C0E5AF00031B7BA /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		E7D94EFC1C0E5AF00031B7BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -85,6 +89,9 @@
 			isa = PBXGroup;
 			children = (
 				E7D94EFA1C0E5AF00031B7BA /* Tests.m */,
+				E78776301C1C82C50035201D /* SFCollectionViewController.h */,
+				E78776311C1C82C50035201D /* SFCollectionViewController.m */,
+				E78776331C1C8A1C0035201D /* SFFocusViewLayout+Private.h */,
 				E7D94EFC1C0E5AF00031B7BA /* Info.plist */,
 			);
 			path = Tests;
@@ -146,6 +153,7 @@
 		E70C601D1C0CEF60005515BE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = fdzsergio;
 				TargetAttributes = {
@@ -207,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7D94EFB1C0E5AF00031B7BA /* Tests.m in Sources */,
+				E78776321C1C82C50035201D /* SFCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,17 +353,20 @@
 		E7D94F001C0E5AF00031B7BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fdzsergio.Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		E7D94F011C0E5AF00031B7BA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -391,6 +403,7 @@
 				E7D94F011C0E5AF00031B7BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

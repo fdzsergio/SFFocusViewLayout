@@ -131,7 +131,8 @@ static CGFloat const kSFFocusViewLayoutDragOffset = 180.f;
     self.cachedLayoutAttributes = [cache copy];
 }
 
-- (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath {
+- (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath
+{
     return self.cachedLayoutAttributes[indexPath.item];
 }
 
