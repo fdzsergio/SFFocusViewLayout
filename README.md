@@ -49,7 +49,7 @@ You can also install it via [Carthage](https://github.com/Carthage/Carthage). To
 github "fdzsergio/SFFocusViewLayout"
 ```
 
-## Upcoming
+## Roadmap
 - [x] Carthage support
 - [x] Swift compatible
 
