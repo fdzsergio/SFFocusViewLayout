@@ -7,118 +7,131 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E70C602A1C0CEF60005515BE /* SFFocusViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = E70C60291C0CEF60005515BE /* SFFocusViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E70C60321C0D0478005515BE /* SFFocusViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E70C60311C0D0478005515BE /* SFFocusViewLayout.m */; };
-		E78776321C1C82C50035201D /* SFCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E78776311C1C82C50035201D /* SFCollectionViewController.m */; };
-		E7D94EFB1C0E5AF00031B7BA /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D94EFA1C0E5AF00031B7BA /* Tests.m */; };
-		E7D94EFD1C0E5AF00031B7BA /* SFFocusViewLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E70C60261C0CEF60005515BE /* SFFocusViewLayout.framework */; };
+		E709068A1C5C30D7001D547B /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70906891C5C30D7001D547B /* Tests.swift */; };
+		E709068C1C5C30D7001D547B /* SFFocusViewLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E766BC931C5BE5330036C384 /* SFFocusViewLayout.framework */; };
+		E766BC971C5BE5330036C384 /* SFFocusViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = E766BC961C5BE5330036C384 /* SFFocusViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E766BC9F1C5BE6400036C384 /* SFFocusViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E766BC9E1C5BE6400036C384 /* SFFocusViewLayout.swift */; };
+		E7ABB4C91C5C347A00A5810C /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7ABB4C81C5C347A00A5810C /* CollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E7D94EFE1C0E5AF00031B7BA /* PBXContainerItemProxy */ = {
+		E709068D1C5C30D7001D547B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E70C601D1C0CEF60005515BE /* Project object */;
+			containerPortal = E766BC8A1C5BE5330036C384 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E70C60251C0CEF60005515BE;
+			remoteGlobalIDString = E766BC921C5BE5330036C384;
 			remoteInfo = SFFocusViewLayout;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E70C60261C0CEF60005515BE /* SFFocusViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SFFocusViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E70C60291C0CEF60005515BE /* SFFocusViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFFocusViewLayout.h; sourceTree = "<group>"; };
-		E70C602B1C0CEF60005515BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E70C60311C0D0478005515BE /* SFFocusViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFFocusViewLayout.m; sourceTree = "<group>"; };
-		E78776301C1C82C50035201D /* SFCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCollectionViewController.h; sourceTree = "<group>"; };
-		E78776311C1C82C50035201D /* SFCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCollectionViewController.m; sourceTree = "<group>"; };
-		E78776331C1C8A1C0035201D /* SFFocusViewLayout+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SFFocusViewLayout+Private.h"; sourceTree = "<group>"; };
-		E7D94EF81C0E5AF00031B7BA /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7D94EFA1C0E5AF00031B7BA /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
-		E7D94EFC1C0E5AF00031B7BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E70906871C5C30D7001D547B /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E70906891C5C30D7001D547B /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		E709068B1C5C30D7001D547B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E766BC931C5BE5330036C384 /* SFFocusViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SFFocusViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E766BC961C5BE5330036C384 /* SFFocusViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFFocusViewLayout.h; sourceTree = "<group>"; };
+		E766BC981C5BE5330036C384 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E766BC9E1C5BE6400036C384 /* SFFocusViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFFocusViewLayout.swift; sourceTree = "<group>"; };
+		E7ABB4C81C5C347A00A5810C /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E70C60221C0CEF60005515BE /* Frameworks */ = {
+		E70906841C5C30D7001D547B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E709068C1C5C30D7001D547B /* SFFocusViewLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E7D94EF51C0E5AF00031B7BA /* Frameworks */ = {
+		E766BC8F1C5BE5330036C384 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7D94EFD1C0E5AF00031B7BA /* SFFocusViewLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E70C601C1C0CEF60005515BE = {
+		E70906881C5C30D7001D547B /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				E70C60281C0CEF60005515BE /* SFFocusViewLayout */,
-				E7D94EF91C0E5AF00031B7BA /* Tests */,
-				E70C60271C0CEF60005515BE /* Products */,
+				E70906891C5C30D7001D547B /* Tests.swift */,
+				E7ABB4C81C5C347A00A5810C /* CollectionViewController.swift */,
+				E709068B1C5C30D7001D547B /* Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		E766BC891C5BE5330036C384 = {
+			isa = PBXGroup;
+			children = (
+				E766BC951C5BE5330036C384 /* Source */,
+				E70906881C5C30D7001D547B /* Tests */,
+				E766BC941C5BE5330036C384 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		E70C60271C0CEF60005515BE /* Products */ = {
+		E766BC941C5BE5330036C384 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E70C60261C0CEF60005515BE /* SFFocusViewLayout.framework */,
-				E7D94EF81C0E5AF00031B7BA /* Tests.xctest */,
+				E766BC931C5BE5330036C384 /* SFFocusViewLayout.framework */,
+				E70906871C5C30D7001D547B /* Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E70C60281C0CEF60005515BE /* SFFocusViewLayout */ = {
+		E766BC951C5BE5330036C384 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				E70C602B1C0CEF60005515BE /* Info.plist */,
-				E70C60291C0CEF60005515BE /* SFFocusViewLayout.h */,
-				E70C60311C0D0478005515BE /* SFFocusViewLayout.m */,
+				E766BC961C5BE5330036C384 /* SFFocusViewLayout.h */,
+				E766BC981C5BE5330036C384 /* Info.plist */,
+				E766BC9E1C5BE6400036C384 /* SFFocusViewLayout.swift */,
 			);
-			name = SFFocusViewLayout;
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		E7D94EF91C0E5AF00031B7BA /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				E7D94EFA1C0E5AF00031B7BA /* Tests.m */,
-				E78776301C1C82C50035201D /* SFCollectionViewController.h */,
-				E78776311C1C82C50035201D /* SFCollectionViewController.m */,
-				E78776331C1C8A1C0035201D /* SFFocusViewLayout+Private.h */,
-				E7D94EFC1C0E5AF00031B7BA /* Info.plist */,
-			);
-			path = Tests;
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		E70C60231C0CEF60005515BE /* Headers */ = {
+		E766BC901C5BE5330036C384 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E70C602A1C0CEF60005515BE /* SFFocusViewLayout.h in Headers */,
+				E766BC971C5BE5330036C384 /* SFFocusViewLayout.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		E70C60251C0CEF60005515BE /* SFFocusViewLayout */ = {
+		E70906861C5C30D7001D547B /* Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E70C602E1C0CEF60005515BE /* Build configuration list for PBXNativeTarget "SFFocusViewLayout" */;
+			buildConfigurationList = E70906911C5C30D7001D547B /* Build configuration list for PBXNativeTarget "Tests" */;
 			buildPhases = (
-				E70C60211C0CEF60005515BE /* Sources */,
-				E70C60221C0CEF60005515BE /* Frameworks */,
-				E70C60231C0CEF60005515BE /* Headers */,
-				E70C60241C0CEF60005515BE /* Resources */,
+				E70906831C5C30D7001D547B /* Sources */,
+				E70906841C5C30D7001D547B /* Frameworks */,
+				E70906851C5C30D7001D547B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E709068E1C5C30D7001D547B /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = E70906871C5C30D7001D547B /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E766BC921C5BE5330036C384 /* SFFocusViewLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E766BC9B1C5BE5330036C384 /* Build configuration list for PBXNativeTarget "SFFocusViewLayout" */;
+			buildPhases = (
+				E766BC8E1C5BE5330036C384 /* Sources */,
+				E766BC8F1C5BE5330036C384 /* Frameworks */,
+				E766BC901C5BE5330036C384 /* Headers */,
+				E766BC911C5BE5330036C384 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -126,73 +139,55 @@
 			);
 			name = SFFocusViewLayout;
 			productName = SFFocusViewLayout;
-			productReference = E70C60261C0CEF60005515BE /* SFFocusViewLayout.framework */;
+			productReference = E766BC931C5BE5330036C384 /* SFFocusViewLayout.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		E7D94EF71C0E5AF00031B7BA /* Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E7D94F021C0E5AF00031B7BA /* Build configuration list for PBXNativeTarget "Tests" */;
-			buildPhases = (
-				E7D94EF41C0E5AF00031B7BA /* Sources */,
-				E7D94EF51C0E5AF00031B7BA /* Frameworks */,
-				E7D94EF61C0E5AF00031B7BA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E7D94EFF1C0E5AF00031B7BA /* PBXTargetDependency */,
-			);
-			name = Tests;
-			productName = Tests;
-			productReference = E7D94EF81C0E5AF00031B7BA /* Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E70C601D1C0CEF60005515BE /* Project object */ = {
+		E766BC8A1C5BE5330036C384 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = fdzsergio;
 				TargetAttributes = {
-					E70C60251C0CEF60005515BE = {
-						CreatedOnToolsVersion = 7.1.1;
+					E70906861C5C30D7001D547B = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = V7M9A44686;
 					};
-					E7D94EF71C0E5AF00031B7BA = {
-						CreatedOnToolsVersion = 7.1.1;
+					E766BC921C5BE5330036C384 = {
+						CreatedOnToolsVersion = 7.2;
 					};
 				};
 			};
-			buildConfigurationList = E70C60201C0CEF60005515BE /* Build configuration list for PBXProject "SFFocusViewLayout" */;
+			buildConfigurationList = E766BC8D1C5BE5330036C384 /* Build configuration list for PBXProject "SFFocusViewLayout" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
-			mainGroup = E70C601C1C0CEF60005515BE;
-			productRefGroup = E70C60271C0CEF60005515BE /* Products */;
+			mainGroup = E766BC891C5BE5330036C384;
+			productRefGroup = E766BC941C5BE5330036C384 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E70C60251C0CEF60005515BE /* SFFocusViewLayout */,
-				E7D94EF71C0E5AF00031B7BA /* Tests */,
+				E766BC921C5BE5330036C384 /* SFFocusViewLayout */,
+				E70906861C5C30D7001D547B /* Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E70C60241C0CEF60005515BE /* Resources */ = {
+		E70906851C5C30D7001D547B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E7D94EF61C0E5AF00031B7BA /* Resources */ = {
+		E766BC911C5BE5330036C384 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -202,35 +197,57 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E70C60211C0CEF60005515BE /* Sources */ = {
+		E70906831C5C30D7001D547B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E70C60321C0D0478005515BE /* SFFocusViewLayout.m in Sources */,
+				E7ABB4C91C5C347A00A5810C /* CollectionViewController.swift in Sources */,
+				E709068A1C5C30D7001D547B /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E7D94EF41C0E5AF00031B7BA /* Sources */ = {
+		E766BC8E1C5BE5330036C384 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7D94EFB1C0E5AF00031B7BA /* Tests.m in Sources */,
-				E78776321C1C82C50035201D /* SFCollectionViewController.m in Sources */,
+				E766BC9F1C5BE6400036C384 /* SFFocusViewLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E7D94EFF1C0E5AF00031B7BA /* PBXTargetDependency */ = {
+		E709068E1C5C30D7001D547B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E70C60251C0CEF60005515BE /* SFFocusViewLayout */;
-			targetProxy = E7D94EFE1C0E5AF00031B7BA /* PBXContainerItemProxy */;
+			target = E766BC921C5BE5330036C384 /* SFFocusViewLayout */;
+			targetProxy = E709068D1C5C30D7001D547B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		E70C602C1C0CEF60005515BE /* Debug */ = {
+		E709068F1C5C30D7001D547B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fdzsergio.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E70906901C5C30D7001D547B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fdzsergio.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E766BC991C5BE5330036C384 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -271,13 +288,14 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		E70C602D1C0CEF60005515BE /* Release */ = {
+		E766BC9A1C5BE5330036C384 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -318,94 +336,74 @@
 			};
 			name = Release;
 		};
-		E70C602F1C0CEF60005515BE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Classes/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fdzsergio.SFFocusViewLayout;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		E70C60301C0CEF60005515BE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Classes/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fdzsergio.SFFocusViewLayout;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		E7D94F001C0E5AF00031B7BA /* Debug */ = {
+		E766BC9C1C5BE5330036C384 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = Tests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fdzsergio.Tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fdzsergio.SFFocusViewLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		E7D94F011C0E5AF00031B7BA /* Release */ = {
+		E766BC9D1C5BE5330036C384 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = Tests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fdzsergio.Tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fdzsergio.SFFocusViewLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E70C60201C0CEF60005515BE /* Build configuration list for PBXProject "SFFocusViewLayout" */ = {
+		E70906911C5C30D7001D547B /* Build configuration list for PBXNativeTarget "Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E70C602C1C0CEF60005515BE /* Debug */,
-				E70C602D1C0CEF60005515BE /* Release */,
+				E709068F1C5C30D7001D547B /* Debug */,
+				E70906901C5C30D7001D547B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E70C602E1C0CEF60005515BE /* Build configuration list for PBXNativeTarget "SFFocusViewLayout" */ = {
+		E766BC8D1C5BE5330036C384 /* Build configuration list for PBXProject "SFFocusViewLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E70C602F1C0CEF60005515BE /* Debug */,
-				E70C60301C0CEF60005515BE /* Release */,
+				E766BC991C5BE5330036C384 /* Debug */,
+				E766BC9A1C5BE5330036C384 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E7D94F021C0E5AF00031B7BA /* Build configuration list for PBXNativeTarget "Tests" */ = {
+		E766BC9B1C5BE5330036C384 /* Build configuration list for PBXNativeTarget "SFFocusViewLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E7D94F001C0E5AF00031B7BA /* Debug */,
-				E7D94F011C0E5AF00031B7BA /* Release */,
+				E766BC9C1C5BE5330036C384 /* Debug */,
+				E766BC9D1C5BE5330036C384 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = E70C601D1C0CEF60005515BE /* Project object */;
+	rootObject = E766BC8A1C5BE5330036C384 /* Project object */;
 }

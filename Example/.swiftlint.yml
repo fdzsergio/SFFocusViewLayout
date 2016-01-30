@@ -1,0 +1,15 @@
+disabled_rules: # rule identifiers to exclude from running
+  - trailing_newline
+  - force_cast
+  - nesting
+
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Carthage
+  - Pods
+
+# parameterized rules can be customized from this configuration file
+line_length: 120
+# parameterized rules are first parameterized as a warning level, then error level.
+variable_name_min_length:
+  - 1 # warning
+  - 1 # error

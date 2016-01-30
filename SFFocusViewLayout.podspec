@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "SFFocusViewLayout"
-  s.version          = "2.0.0"
+  s.version          = "3.0.0"
   s.summary          = "UICollectionViewLayout subclass with focused content."
 
   s.description      = <<-DESC
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '8.0'
   s.requires_arc = true
 
-  s.source_files = 'Classes/*.{h,m}'
+  s.source_files = 'Source/*.{h,swift}'
   s.frameworks = 'UIKit'
   
   s.ios.deployment_target = '8.0'

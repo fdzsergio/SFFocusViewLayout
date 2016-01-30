@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0710"
+   LastUpgradeVersion = "0720"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E70C60251C0CEF60005515BE"
+               BlueprintIdentifier = "E766BC921C5BE5330036C384"
                BuildableName = "SFFocusViewLayout.framework"
                BlueprintName = "SFFocusViewLayout"
                ReferencedContainer = "container:SFFocusViewLayout.xcodeproj">
@@ -33,7 +33,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E7D94EF71C0E5AF00031B7BA"
+               BlueprintIdentifier = "E70906861C5C30D7001D547B"
                BuildableName = "Tests.xctest"
                BlueprintName = "Tests"
                ReferencedContainer = "container:SFFocusViewLayout.xcodeproj">
@@ -43,7 +43,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E70C60251C0CEF60005515BE"
+            BlueprintIdentifier = "E766BC921C5BE5330036C384"
             BuildableName = "SFFocusViewLayout.framework"
             BlueprintName = "SFFocusViewLayout"
             ReferencedContainer = "container:SFFocusViewLayout.xcodeproj">
@@ -65,7 +65,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E70C60251C0CEF60005515BE"
+            BlueprintIdentifier = "E766BC921C5BE5330036C384"
             BuildableName = "SFFocusViewLayout.framework"
             BlueprintName = "SFFocusViewLayout"
             ReferencedContainer = "container:SFFocusViewLayout.xcodeproj">
@@ -83,7 +83,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E70C60251C0CEF60005515BE"
+            BlueprintIdentifier = "E766BC921C5BE5330036C384"
             BuildableName = "SFFocusViewLayout.framework"
             BlueprintName = "SFFocusViewLayout"
             ReferencedContainer = "container:SFFocusViewLayout.xcodeproj">

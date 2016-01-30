@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SFFocusViewLayout  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="SFFocusViewLayout  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">SFFocusViewLayout Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">SFFocusViewLayout Reference</a>
+        <img id="carat" src="img/carat.png" />
+        SFFocusViewLayout  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/SFFocusViewLayout.html">SFFocusViewLayout</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <a href='#sffocusviewlayout' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='sffocusviewlayout'>SFFocusViewLayout</h1>
+
+<p><a href="https://travis-ci.org/fdzsergio/SFFocusViewLayout"><img src="http://img.shields.io/travis/fdzsergio/SFFocusViewLayout.svg?style=flat" alt="CI Status"></a>
+<a href="http://cocoapods.org/pods/SFFocusViewLayout"><img src="https://img.shields.io/cocoapods/v/SFFocusViewLayout.svg?style=flat" alt="Version"></a>
+<a href="http://codecov.io/github/fdzsergio/SFFocusViewLayout"><img src="https://img.shields.io/codecov/c/github/fdzsergio/SFFocusViewLayout.svg" alt="codecov.io"></a>
+<a href="http://cocoapods.org/pods/SFFocusViewLayout"><img src="https://img.shields.io/cocoapods/l/SFFocusViewLayout.svg?style=flat" alt="License"></a>
+<a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible"></a>
+<a href="http://cocoapods.org/pods/SFFocusViewLayout"><img src="https://img.shields.io/cocoapods/p/SFFocusViewLayout.svg?style=flat" alt="Platform"></a></p>
+<a href='#overview' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='overview'>Overview</h2>
+
+<p>SFFocusViewLayout is a UICollectionViewLayout subclass for displaying focused content on UICollectionView which is the largest cell of all.</p>
+
+<p align="center" >
+  
+    <img src="./Screenshots/SFFocusViewLayout.gif" alt="SFFocusViewLayout" title="SFFocusViewLayout">
+
+</p>
+<a href='#usage' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='usage'>Usage</h2>
+
+<p>SFFocusViewLayout contains three properties to customize the interface.</p>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">standardHeight</span><span class="p">:</span> <span class="kt">CGFloat</span>
+<span class="k">var</span> <span class="nv">focusedHeight</span><span class="p">:</span> <span class="kt">CGFloat</span>
+<span class="k">var</span> <span class="nv">dragOffset</span><span class="p">:</span> <span class="kt">CGFloat</span>
+</code></pre>
+
+<ul>
+<li><em>focusedHeight</em> is the height cells should be when focused.  Defaults to 280</li>
+<li><em>standardHeight</em> is the height cells should be when collapsed.  Defaults to 100</li>
+<li><em>dragOffset</em> is the amount the user needs to scroll before the featured cell changes. Defaults to 180</li>
+</ul>
+<a href='#versions' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='versions'>Versions</h2>
+<a href='#swift' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='swift'>Swift</h3>
+
+<p>If you want to use a Swift implementation of this framework use a 3.0 or greater version</p>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'SFFocusViewLayout'</span><span class="p">,</span> <span class="s1">'~&gt; 3.0'</span>
+</code></pre>
+<a href='#objective_c' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='objective_c'>Objective–C</h3>
+
+<p>If you want to use a Objective–C implementation of this framework use a 3.0 or greater version</p>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'SFFocusViewLayout'</span><span class="p">,</span> <span class="s1">'~&gt; 2.0'</span>
+</code></pre>
+<a href='#installation' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='installation'>Installation</h2>
+<a href='#cocoapods' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='cocoapods'>CocoaPods</h3>
+
+<p>SFFocusViewLayout is available through <a href="http://cocoapods.org">CocoaPods</a>. To install
+it, simply add the following line to your Podfile:</p>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'SFFocusViewLayout'</span>
+</code></pre>
+<a href='#carthage' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='carthage'>Carthage</h3>
+
+<p>You can also install it via <a href="https://github.com/Carthage/Carthage">Carthage</a>. To do so, add the following to your Cartfile:</p>
+<pre class="highlight plaintext"><code>github 'fdzsergio/SFFocusViewLayout'
+</code></pre>
+<a href='#roadmap' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='roadmap'>Roadmap</h2>
+
+<ul>
+<li>[x] Carthage support</li>
+<li>[x] Swift compatible</li>
+<li>[x] Swift version</li>
+<li>[x] Tests</li>
+</ul>
+<a href='#author' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='author'>Author</h2>
+
+<p>Sergio Fernández, <a href="mailto:fdz.sergio@gmail.com">fdz.sergio@gmail.com</a></p>
+<a href='#acknowledgement' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='acknowledgement'>Acknowledgement</h2>
+
+<p>This framework is heavily inspired by the Ultravisual example of <a href="http://www.raywenderlich.com/99087/swift-expanding-cells-ios-collection-views">Ray Wenderlich</a>.</p>
+<a href='#license' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='license'>License</h2>
+
+<p>SFFocusViewLayout is available under the MIT license. See the <a href="https://raw.githubusercontent.com/fdzsergio/SFFocusViewLayout/master/LICENSE">LICENSE</a> file for more info.</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="https://github.com/fdzsergio/SFFocusViewLayout" target="_blank" rel="external">Sergio Fernández</a>. All rights reserved. (Last updated: 2016-01-30)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "container:Example/Example.xcodeproj">
+      location = "group:Example/Example.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:SFFocusViewLayout.xcodeproj">
+      location = "container:SFFocusViewLayout.xcodeproj">
    </FileRef>
 </Workspace>

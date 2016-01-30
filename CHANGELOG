@@ -1,11 +1,14 @@
 # SFFocusViewLayout CHANGELOG
 
+## 3.0.0
+Swift 2.1 version.
+
 ## 2.0.0
-Carthage support
-Swift compatible
+Carthage support.
+Swift compatible.
 
 ## 1.1.0
-Added Xcode 6.4 support
+Added Xcode 6.4 support.
 
 ## 1.0.1
 

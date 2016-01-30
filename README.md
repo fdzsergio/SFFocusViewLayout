@@ -20,16 +20,32 @@ SFFocusViewLayout is a UICollectionViewLayout subclass for displaying focused co
 
 SFFocusViewLayout contains three properties to customize the interface.
 
-```objc
-@property (nonatomic) CGFloat standardHeight;
-@property (nonatomic) CGFloat focusedHeight;
-@property (nonatomic) CGFloat dragOffset;
+```swift
+var standardHeight: CGFloat
+var focusedHeight: CGFloat
+var dragOffset: CGFloat
 ```
 
-- _focusedHeight_ is the height cells should be when focused.  Defaults to kSFFocusViewLayoutFocusedHeight
-- _standardHeight_ is the height cells should be when collapsed.  Defaults to kSFFocusViewLayoutStandardHeight
-- _dragOffset_ is the amount the user needs to scroll before the featured cell changes
+- _focusedHeight_ is the height cells should be when focused.  Defaults to 280
+- _standardHeight_ is the height cells should be when collapsed.  Defaults to 100
+- _dragOffset_ is the amount the user needs to scroll before the featured cell changes. Defaults to 180
 
+
+## Versions
+
+### Swift
+If you want to use a Swift implementation of this framework use a 3.0 or greater version
+
+```ruby
+pod 'SFFocusViewLayout', '~> 3.0'
+```
+
+### Objective–C
+If you want to use a Objective–C implementation of this framework use a 3.0 or greater version
+
+```ruby
+pod 'SFFocusViewLayout', '~> 2.0'
+```
 
 ## Installation
 
@@ -39,19 +55,21 @@ SFFocusViewLayout is available through [CocoaPods](http://cocoapods.org). To ins
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "SFFocusViewLayout"
+pod 'SFFocusViewLayout'
 ```
 ### Carthage
 
 You can also install it via [Carthage](https://github.com/Carthage/Carthage). To do so, add the following to your Cartfile:
 
-```ruby
-github "fdzsergio/SFFocusViewLayout"
+```terminal
+github 'fdzsergio/SFFocusViewLayout'
 ```
 
 ## Roadmap
 - [x] Carthage support
 - [x] Swift compatible
+- [x] Swift version
+- [x] Tests
 
 ## Author
 
@@ -59,8 +77,8 @@ Sergio Fernández, fdz.sergio@gmail.com
 
 ## Acknowledgement
 
-This [CocoaPod](https://cocoapods.org/pods/SFFocusViewLayout) is heavily inspired by the Ultravisual example of [Ray Wenderlich](http://www.raywenderlich.com/99087/swift-expanding-cells-ios-collection-views).
+This framework is heavily inspired by the Ultravisual example of [Ray Wenderlich](http://www.raywenderlich.com/99087/swift-expanding-cells-ios-collection-views).
 
 ## License
 
-SFFocusViewLayout is available under the MIT license. See the LICENSE file for more info.
+SFFocusViewLayout is available under the MIT license. See the [LICENSE](https://raw.githubusercontent.com/fdzsergio/SFFocusViewLayout/master/LICENSE) file for more info.
