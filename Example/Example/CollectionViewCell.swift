@@ -33,7 +33,7 @@ class CollectionViewCell: UICollectionViewCell {
         let featuredHeight: CGFloat = Constant.featuredHeight
         let standardHeight: CGFloat = Constant.standardHegiht
 
-        let delta = 1 - (featuredHeight - CGRectGetHeight(frame)/(featuredHeight - standardHeight))
+        let delta = 1 - (featuredHeight - CGRectGetHeight(frame)) / (featuredHeight - standardHeight)
 
         let minAlpha: CGFloat = Constant.minAlpha
         let maxAlpha: CGFloat = Constant.maxAlpha
