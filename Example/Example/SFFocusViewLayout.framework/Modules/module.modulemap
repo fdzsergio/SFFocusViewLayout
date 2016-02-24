@@ -1,0 +1,10 @@
+framework module SFFocusViewLayout {
+  umbrella header "SFFocusViewLayout.h"
+
+  export *
+  module * { export * }
+}
+
+module SFFocusViewLayout.Swift {
+    header "SFFocusViewLayout-Swift.h"
+}
