@@ -9,7 +9,7 @@
 import Foundation
 
 protocol DataSource: class {
-    typealias Item
+    associatedtype Item
     var items: [Item] { get }
 
     var count: Int { get }

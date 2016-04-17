@@ -9,8 +9,8 @@
 import Foundation
 
 protocol Presenter {
-    typealias Model
-    typealias View
+    associatedtype Model
+    associatedtype View
 
     func presentModel(model: Model, inView view: View)
 }
