@@ -41,7 +41,7 @@ pod 'SFFocusViewLayout', '~> 3.0'
 ```
 
 ### Objective–C
-If you want to use a Objective–C implementation of this framework use a 3.0 or greater version
+If you want to use a Objective–C implementation of this framework use a 2.0 or greater version
 
 ```ruby
 pod 'SFFocusViewLayout', '~> 2.0'
