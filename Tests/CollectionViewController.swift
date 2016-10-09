@@ -13,6 +13,8 @@ private let reuseIdentifier = "Cell"
 class CollectionViewController: UICollectionViewController {
 
     var items = [Int]()
+    
+    var numberOfSectionsToReturn = 1
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +25,7 @@ class CollectionViewController: UICollectionViewController {
     // MARK: UICollectionViewDataSource
 
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        return 1
+        return numberOfSectionsToReturn
     }
 
 
