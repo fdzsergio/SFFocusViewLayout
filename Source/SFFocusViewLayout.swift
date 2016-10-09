@@ -126,6 +126,10 @@ public class SFFocusViewLayout: UICollectionViewLayout {
 private extension UICollectionViewLayout {
 
     var numberOfItems: Int {
+        guard collectionView?.numberOfSections() > 0 else {
+            return 0
+        }
+        
         return collectionView!.numberOfItemsInSection(0)
     }
 
