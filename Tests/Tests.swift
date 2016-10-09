@@ -81,5 +81,10 @@ class Tests: XCTestCase {
     func testLayoutShouldInvalidateLayoutForBoundsChange() {
         XCTAssertTrue(focusViewLayout.shouldInvalidateLayoutForBoundsChange(CGRect()))
     }
+    
+    func testCanPrepareLayoutForCollectionViewWithZeroSections() {
+        collectionViewController?.numberOfSectionsToReturn = 0
+        focusViewLayout.prepareLayout()
+    }
 
 }
