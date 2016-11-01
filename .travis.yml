@@ -1,9 +1,10 @@
+language: objective-c
+os: osx
 osx_image: xcode8
 
-language: objective-c
-
 script:
-- set -o pipefail && xcodebuild analyze build test -workspace SFFocusViewLayout.xcworkspace -scheme SFFocusViewLayout -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 7' GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty -c
+- set -o pipefail 
+- xcodebuild clean test -workspace SFFocusViewLayout.xcworkspace -scheme SFFocusViewLayout -destination "platform=iOS Simulator,name=iPhone 7" -enableCodeCoverage YES | xcpretty
 - pod lib lint --quick
 
 after_success:
