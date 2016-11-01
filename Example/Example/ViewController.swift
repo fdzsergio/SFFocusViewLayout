@@ -9,12 +9,12 @@
 import UIKit
 import SFFocusViewLayout
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
 
-    let repository = Repository()
-    let renderer = Renderer()
+    fileprivate let repository = Repository()
+    fileprivate let renderer = Renderer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
 
-        collectionView.register(CollectionViewCell)
+        collectionView.register(CollectionViewCell.self)
 
         collectionView.decelerationRate = UIScrollViewDecelerationRateFast
         collectionView.backgroundColor = UIColor(red: 51/255, green: 55/255, blue: 61/255, alpha: 1)
@@ -32,38 +32,40 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
 
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return .LightContent
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return .lightContent
     }
 }
 
 extension ViewController: UICollectionViewDataSource {
 
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return repository.count
     }
 
-    func collectionView(collectionView: UICollectionView,
-        cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         return collectionView.dequeueReusableCell(forIndexPath: indexPath) as CollectionViewCell
     }
 
-    func collectionView(collectionView: UICollectionView,
-        willDisplayCell cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath) {
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
 
-        guard let cell = cell as? CollectionViewCellRender else {
+        guard
+            let cell = cell as? CollectionViewCellInterface
+        else {
             fatalError("error with registred cell")
         }
 
-        renderer.presentModel(repository[indexPath.item], inView: cell)
+        renderer.present(model: repository[indexPath.item], in: cell)
     }
 }
 
 extension ViewController: UICollectionViewDelegate {
 
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 
-        guard let focusViewLayout = collectionView.collectionViewLayout as? SFFocusViewLayout else {
+        guard
+            let focusViewLayout = collectionView.collectionViewLayout as? SFFocusViewLayout
+        else {
             fatalError("error casting focus layout from collection view")
         }
 

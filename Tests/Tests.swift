@@ -10,16 +10,14 @@ import XCTest
 
 @testable import SFFocusViewLayout
 
-class Tests: XCTestCase {
+final class Tests: XCTestCase, CollectionViewControllerDependencies {
 
-    var focusViewLayout: SFFocusViewLayout!
-    var collectionViewController: CollectionViewController!
+    private let focusViewLayout: SFFocusViewLayout = Tests.focusViewLayout
+    private let collectionViewController: CollectionViewController = Tests.collectionViewController
 
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        focusViewLayout = SFFocusViewLayout()
-        collectionViewController = CollectionViewController(collectionViewLayout: focusViewLayout)
         collectionViewController.view.frame = CGRect(x: 0, y: 0, width: 600, height: 600)
     }
 
@@ -35,7 +33,7 @@ class Tests: XCTestCase {
     }
 
     func testLayoutContentViewSizeUsesController() {
-        let focusViewLayoutSize = self.focusViewLayout.collectionViewContentSize()
+        let focusViewLayoutSize = self.focusViewLayout.collectionViewContentSize
         let collectionViewControllerSize = self.collectionViewController.view.frame.size
 
         XCTAssertEqual(focusViewLayoutSize.width, collectionViewControllerSize.width)
@@ -43,7 +41,7 @@ class Tests: XCTestCase {
     }
 
     func testLayoutHasSmoothScrolling() {
-        let proposedOffset = focusViewLayout.targetContentOffsetForProposedContentOffset(CGPoint(), withScrollingVelocity: CGPoint())
+        let proposedOffset = focusViewLayout.targetContentOffset(forProposedContentOffset: CGPoint(), withScrollingVelocity: CGPoint())
 
         XCTAssertEqual(proposedOffset.x, 0)
         XCTAssertEqual(proposedOffset.y, 0)
@@ -62,7 +60,7 @@ class Tests: XCTestCase {
 
         collectionViewController.view.layoutIfNeeded()
 
-        let attributes = focusViewLayout.layoutAttributesForElementsInRect(CGRect())!
+        let attributes = focusViewLayout.layoutAttributesForElements(in: CGRect())!
         
         XCTAssertEqual(focusViewLayout.cached, attributes)
     }
@@ -72,14 +70,21 @@ class Tests: XCTestCase {
 
         collectionViewController.view.layoutIfNeeded()
 
-        let indexPath = NSIndexPath(forItem: 0, inSection: 0)
-        let attribute = focusViewLayout.layoutAttributesForItemAtIndexPath(indexPath)
+        let indexPath = IndexPath(item: 0, section: 0)
+        let attribute = focusViewLayout.layoutAttributesForItem(at: indexPath)
 
         XCTAssertEqual(focusViewLayout.cached[0], attribute)
     }
 
     func testLayoutShouldInvalidateLayoutForBoundsChange() {
-        XCTAssertTrue(focusViewLayout.shouldInvalidateLayoutForBoundsChange(CGRect()))
+        XCTAssertTrue(focusViewLayout.shouldInvalidateLayout(forBoundsChange: CGRect()))
+    }
+    
+    func testCanPrepareLayoutForCollectionViewWithZeroSections() {
+        collectionViewController.items = []
+        focusViewLayout.prepare()
+        
+        XCTAssertEqual(focusViewLayout.cached.count, 0);
     }
 
 }

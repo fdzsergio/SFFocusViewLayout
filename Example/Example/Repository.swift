@@ -8,29 +8,27 @@
 
 import Foundation
 
-class Repository: DataSource {
+struct Repository: DataSource {
 
-    lazy var items: [Resource] = self.generateResourcesFromDocuments()
-
-    private func generateResourcesFromDocuments() -> [Resource] {
-        guard let fileURL = NSBundle.mainBundle()
-            .URLForResource(Constant.Filename, withExtension: Constant.Extension) else {
-            fatalError("resource file not found")
-        }
-        let resourcesFromPlist = NSArray(contentsOfURL: fileURL)!
-
-        return resourcesFromPlist.map { resourceDictionary in
-            guard let dictionary = resourceDictionary as? [String : String] else {
-                fatalError("invalid dictionary format")
-            }
-            return Parser.mapElement(dictionary)
-        }
-    }
+    let items: [Resource] = Repository.resources
 }
 
-extension Repository {
+private extension Repository {
+    
+    static var resources: [Resource] {
+        guard
+            let fileURL = Bundle.main
+            .url(forResource: Constant.filename, withExtension: Constant.fileExtension),
+            let resources = NSArray(contentsOf: fileURL) as? [[String: String]]
+        else {
+                fatalError("resource file not found")
+        }
+        
+        return resources.flatMap(Parser.map)
+    }
+
     private struct Constant {
-        static let Filename = "Resources"
-        static let Extension = "plist"
+        static let filename = "Resources"
+        static let fileExtension = "plist"
     }
 }

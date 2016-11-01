@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol DataSource: class {
+protocol DataSource {
     associatedtype Item
     var items: [Item] { get }
 

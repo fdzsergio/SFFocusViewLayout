@@ -10,12 +10,14 @@ import Foundation
 
 struct Parser: Mapper {
 
-    static func mapElement(element: [String: String]) -> Resource {
+    static func map(element: [String: String]) -> Resource {
 
-        guard let title = element[Resource.Constant.Title],
+        guard
+            let title = element[Resource.Constant.Title],
             let description = element[Resource.Constant.Description],
-            let filename = element[Resource.Constant.Filename] else {
-                fatalError("error with parse elements")
+            let filename = element[Resource.Constant.Filename]
+        else {
+            fatalError("error with parse elements")
         }
 
         return Resource(title: title, description: description, filename: filename)

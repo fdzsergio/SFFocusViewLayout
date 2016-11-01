@@ -1,11 +1,13 @@
 # SFFocusViewLayout
 
 [![Travis CI](https://travis-ci.org/fdzsergio/SFFocusViewLayout.svg?branch=master)](https://travis-ci.org/fdzsergio/SFFocusViewLayout)
-[![Version](https://img.shields.io/cocoapods/v/SFFocusViewLayout.svg?style=flat)](http://cocoapods.org/pods/SFFocusViewLayout)
 [![codecov.io](https://codecov.io/github/fdzsergio/SFFocusViewLayout/coverage.svg?branch=master)](https://codecov.io/github/fdzsergio/SFFocusViewLayout?branch=master)
-[![License](https://img.shields.io/cocoapods/l/SFFocusViewLayout.svg?style=flat)](http://cocoapods.org/pods/SFFocusViewLayout)
+[![Swift Version](https://img.shields.io/badge/Swift-3.0.x-orange.svg)]()
+[![Version](https://img.shields.io/cocoapods/v/SFFocusViewLayout.svg?style=flat)](http://cocoapods.org/pods/SFFocusViewLayout)
+[![SPM](https://img.shields.io/badge/SPM-ready-orange.svg)]()
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Platform](https://img.shields.io/cocoapods/p/SFFocusViewLayout.svg?style=flat)](http://cocoapods.org/pods/SFFocusViewLayout)
+[![License](https://img.shields.io/cocoapods/l/SFFocusViewLayout.svg?style=flat)](http://cocoapods.org/pods/SFFocusViewLayout)
 
 ## Overview
 SFFocusViewLayout is a UICollectionViewLayout subclass for displaying focused content on UICollectionView which is the largest cell of all.
@@ -34,14 +36,14 @@ var dragOffset: CGFloat
 ## Versions
 
 ### Swift
-If you want to use a Swift implementation of this framework use a 3.0 or greater version
+If you want to use a Swift 3 implementation of this framework use a 3.0 or greater version
 
 ```ruby
 pod 'SFFocusViewLayout', '~> 3.0'
 ```
 
 ### Objective–C
-If you want to use a Objective–C implementation of this framework use a 3.0 or greater version
+If you want to use a Objective–C implementation of this framework use a 2.0 or greater version
 
 ```ruby
 pod 'SFFocusViewLayout', '~> 2.0'
@@ -70,6 +72,7 @@ github 'fdzsergio/SFFocusViewLayout'
 - [x] Swift compatible
 - [x] Swift version
 - [x] Tests
+- [x] Upgrade to Swift 3
 
 ## Author
 

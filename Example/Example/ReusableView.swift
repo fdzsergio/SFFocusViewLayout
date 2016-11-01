@@ -16,7 +16,7 @@ protocol NibLoadableView: class {
 
 extension NibLoadableView where Self: UIView {
     static var nibName: String {
-        return NSStringFromClass(self).componentsSeparatedByString(".").last!
+        return NSStringFromClass(self).components(separatedBy: ".").last!
     }
 }
 
@@ -34,20 +34,22 @@ extension UICollectionViewCell: ReusableView { }
 
 extension UICollectionView {
 
-    func register<T: UICollectionViewCell where T: ReusableView>(_: T.Type) {
-        registerClass(T.self, forCellWithReuseIdentifier: T.defaultReuseIdentifier)
+    func register<T: UICollectionViewCell>(_: T.Type) where T: ReusableView {
+        self.register(T.self, forCellWithReuseIdentifier: T.defaultReuseIdentifier)
     }
 
-    func register<T: UICollectionViewCell where T: ReusableView, T: NibLoadableView>(_: T.Type) {
-        let bundle = NSBundle(forClass: T.self)
+    func register<T: UICollectionViewCell>(_: T.Type) where T: ReusableView, T: NibLoadableView {
+        let bundle = Bundle(for: T.self)
         let nib = UINib(nibName: T.nibName, bundle: bundle)
 
-        registerNib(nib, forCellWithReuseIdentifier: T.defaultReuseIdentifier)
+        self.register(nib, forCellWithReuseIdentifier: T.defaultReuseIdentifier)
     }
 
-    func dequeueReusableCell<T: UICollectionViewCell where T: ReusableView>(forIndexPath indexPath: NSIndexPath) -> T {
+    func dequeueReusableCell<T: UICollectionViewCell>(forIndexPath indexPath: IndexPath) -> T where T: ReusableView {
         let reuseIdentifier = T.defaultReuseIdentifier
-        guard let cell = dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as? T else {
+        guard
+            let cell = self.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? T
+        else {
             fatalError("Could not dequeue cell with identifier: \(T.defaultReuseIdentifier)")
         }
 

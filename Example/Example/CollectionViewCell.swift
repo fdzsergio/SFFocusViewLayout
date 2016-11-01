@@ -8,32 +8,27 @@
 
 import UIKit
 
-protocol CollectionViewCellRender {
+protocol CollectionViewCellInterface {
 
-    func setTitle(title: String)
-    func setDescription(description: String)
-    func setBackgroundImage(image: UIImage)
+    func setTitle(text: String)
+    func setDescription(text: String)
+    func setBackground(image: UIImage)
 }
 
-class CollectionViewCell: UICollectionViewCell {
+final class CollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var overlayView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func applyLayoutAttributes(layoutAttributes: UICollectionViewLayoutAttributes) {
-        super.applyLayoutAttributes(layoutAttributes)
+    override func apply(_ layoutAttributes: UICollectionViewLayoutAttributes) {
+        super.apply(layoutAttributes)
 
         let featuredHeight: CGFloat = Constant.featuredHeight
         let standardHeight: CGFloat = Constant.standardHegiht
 
-        let delta = 1 - (featuredHeight - CGRectGetHeight(frame)) / (featuredHeight - standardHeight)
+        let delta = 1 - (featuredHeight - frame.height) / (featuredHeight - standardHeight)
 
         let minAlpha: CGFloat = Constant.minAlpha
         let maxAlpha: CGFloat = Constant.maxAlpha
@@ -42,29 +37,28 @@ class CollectionViewCell: UICollectionViewCell {
         overlayView.alpha = alpha
 
         let scale = max(delta, 0.5)
-        titleLabel.transform = CGAffineTransformMakeScale(scale, scale)
+        titleLabel.transform = CGAffineTransform(scaleX: scale, y: scale)
 
         descriptionLabel.alpha = delta
     }
 }
 
-extension CollectionViewCell: CollectionViewCellRender {
+extension CollectionViewCell: CollectionViewCellInterface {
 
-    func setTitle(title: String) {
-        self.titleLabel.text = title
+    func setTitle(text: String) {
+        self.titleLabel.text = text
     }
 
-    func setDescription(description: String) {
-        self.descriptionLabel.text = description
+    func setDescription(text: String) {
+        self.descriptionLabel.text = text
     }
 
-    func setBackgroundImage(image: UIImage) {
+    func setBackground(image: UIImage) {
         self.backgroundImageView.image = image
     }
-
 }
 
-extension CollectionViewCell {
+private extension CollectionViewCell {
     struct Constant {
         static let featuredHeight: CGFloat = 280
         static let standardHegiht: CGFloat = 100

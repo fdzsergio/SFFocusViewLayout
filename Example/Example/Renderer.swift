@@ -10,9 +10,9 @@ import Foundation
 
 struct Renderer: Presenter {
 
-    func presentModel(model: Resource, inView view: CollectionViewCellRender) {
-        view.setTitle(model.title)
-        view.setDescription(model.description)
-        view.setBackgroundImage(model.image)
+    func present(model: Resource, in view: CollectionViewCellInterface) {
+        view.setTitle(text: model.title)
+        view.setDescription(text: model.description)
+        view.setBackground(image: model.image)
     }
 }
