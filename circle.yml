@@ -1,0 +1,21 @@
+machine:
+  xcode:
+    version: "8.3"
+  environment:
+    LANG: en_US.UTF-8
+
+dependencies:
+  pre:
+  override:
+    - brew update ; brew update
+    - brew install swiftlint
+
+test:
+  pre:
+  override:
+    - set -o pipefail 
+    - xcodebuild clean test -workspace SFFocusViewLayout.xcworkspace -scheme SFFocusViewLayout -destination "platform=iOS Simulator,name=iPhone 7" -enableCodeCoverage YES | xcpretty
+    - pod lib lint --quick
+  post:
+    - bundle exec danger
+    - bash <(curl -s https://codecov.io/bash) -J Moya
