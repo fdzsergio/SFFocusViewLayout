@@ -1,0 +1,72 @@
+//
+// This file defines additional configuration options that are appropriate only
+// for a framework. Typically, you want to use a platform-specific variant
+// instead.
+//
+
+// Disable code signing for successful device builds with Xcode 8. Frameworks do
+// need to be signed, but they don't need to be signed at compile time because
+// they'll be re-signed when you include them in your app.
+CODE_SIGNING_REQUIRED = NO
+CODE_SIGN_IDENTITY = 
+
+// Whether to strip out code that isn't called from anywhere
+DEAD_CODE_STRIPPING = NO
+
+// Whether this framework should define an LLVM module
+DEFINES_MODULE = YES
+
+// Whether function calls should be position-dependent (should always be
+// disabled for library code)
+GCC_DYNAMIC_NO_PIC = NO
+
+// Default frameworks to the name of the project, instead of any
+// platform-specific target
+PRODUCT_NAME = $(PROJECT_NAME)
+
+// Enables the framework to be included from any location as long as the
+// loader’s runpath search paths includes it. For example from an application
+// bundle (inside the "Frameworks" folder) or shared folder
+INSTALL_PATH = @rpath
+LD_DYLIB_INSTALL_NAME = @rpath/$(PRODUCT_NAME).$(WRAPPER_EXTENSION)/$(PRODUCT_NAME)
+SKIP_INSTALL = YES
+
+// Allows use of APIs that are not available
+// to app extensions and linking to frameworks
+// that have not been built with this setting enabled.
+APPLICATION_EXTENSION_API_ONLY = NO
+
+// Configuration swift version
+SWIFT_VERSION = 3.0
+
+// Always embed Swift std libs
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+
+// Universal framework
+SUPPORTED_PLATFORMS                    = iphonesimulator iphoneos appletvos appletvsimulator
+VALID_ARCHS[sdk=iphoneos*]             = arm64 armv7 armv7s
+VALID_ARCHS[sdk=iphonesimulator*]      = i386 x86_64
+VALID_ARCHS[sdk=appletvos*]            = arm64
+VALID_ARCHS[sdk=appletvsimulator*]     = x86_64
+
+// Dynamic linking uses different default copy paths
+LD_RUNPATH_SEARCH_PATHS[sdk=iphoneos*]         = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+LD_RUNPATH_SEARCH_PATHS[sdk=iphonesimulator*]  = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+LD_RUNPATH_SEARCH_PATHS[sdk=appletvos*]        = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+LD_RUNPATH_SEARCH_PATHS[sdk=appletvsimulator*] = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+
+// iOS-specific default settings
+TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]  = 1,2
+TARGETED_DEVICE_FAMILY[sdk=iphone*]           = 1,2
+
+// TV-specific default settings
+TARGETED_DEVICE_FAMILY[sdk=appletvsimulator*] = 3
+TARGETED_DEVICE_FAMILY[sdk=appletv*]          = 3
+
+ENABLE_BITCODE[sdk=iphonesimulator*]          = YES
+ENABLE_BITCODE[sdk=iphone*]                   = YES
+ENABLE_BITCODE[sdk=appletvsimulator*]         = YES
+ENABLE_BITCODE[sdk=appletv*]                  = YES
+
+// iOS-specific deployment target
+IPHONEOS_DEPLOYMENT_TARGET = 8.0

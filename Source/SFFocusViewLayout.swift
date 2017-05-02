@@ -40,7 +40,6 @@ open class SFFocusViewLayout: UICollectionViewLayout {
 
     @IBInspectable open var focusedHeight: CGFloat = 280
 
-
     /**
      Drag Offset is the amount the user needs to scroll before
      the featured cell changes.
@@ -53,33 +52,35 @@ open class SFFocusViewLayout: UICollectionViewLayout {
 
     internal var cached = [UICollectionViewLayoutAttributes]()
 
-    /// Return the size of all the content in the collection view
-    override open var collectionViewContentSize : CGSize {
+    // Return the size of all the content in the collection view
+    override open var collectionViewContentSize: CGSize {
         let contentHeight = CGFloat(numberOfItems) * dragOffset + (height - dragOffset)
         return CGSize(width: width, height: contentHeight)
     }
 
-    /// Return true so that the layout is continuously invalidated as the user scrolls
+    // Return true so that the layout is continuously invalidated as the user scrolls
     override open func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
         return true
     }
 
-    /// Return the content offset of the nearest cell which achieves the nice snapping effect, similar to a paged UIScrollView
-    open override func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint, withScrollingVelocity velocity: CGPoint) -> CGPoint {
+    // Return the content offset of the nearest cell which achieves the nice snapping effect, 
+    // similar to a paged UIScrollView
+    open override func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint,
+                                           withScrollingVelocity velocity: CGPoint) -> CGPoint {
         let proposedItemIndex = round(proposedContentOffset.y / dragOffset)
         let nearestPageOffset = proposedItemIndex * dragOffset
         // Smooth scrolling when user release the touch to focoused cell
         return CGPoint(x: 0, y: nearestPageOffset)
     }
 
-    /// Return all attributes in the cache whose frame intersects with the rect passed to the method
+    // Return all attributes in the cache whose frame intersects with the rect passed to the method
     override open func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         return cached.filter { attributes in
             return attributes.frame.intersects(rect)
         }
     }
 
-    /// Perform whatever calculations are needed to determine the position of the cells and views in the layout
+    // Perform whatever calculations are needed to determine the position of the cells and views in the layout
     override open func prepare() {
         cached = [UICollectionViewLayoutAttributes]()
 
@@ -117,7 +118,7 @@ open class SFFocusViewLayout: UICollectionViewLayout {
         }
     }
 
-    /// Returns the layout attributes for the item at the specified index path.
+    // Returns the layout attributes for the item at the specified index path.
     override open func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
         return cached[indexPath.item]
     }
@@ -144,7 +145,7 @@ private extension UICollectionViewLayout {
 
 private extension SFFocusViewLayout {
 
-    /// Returns the item index of the currently featured cell
+    // Returns the item index of the currently featured cell
     var currentFocusedItemIndex: Int {
         return max(0, Int(yOffset / dragOffset))
     }
