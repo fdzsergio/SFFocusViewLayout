@@ -34,18 +34,18 @@ extension UICollectionViewCell: ReusableView { }
 
 extension UICollectionView {
 
-    func register<T: UICollectionViewCell>(_: T.Type) where T: ReusableView {
+    func register<T: UICollectionViewCell>(_: T.Type) {
         self.register(T.self, forCellWithReuseIdentifier: T.defaultReuseIdentifier)
     }
 
-    func register<T: UICollectionViewCell>(_: T.Type) where T: ReusableView, T: NibLoadableView {
+    func register<T: UICollectionViewCell>(_: T.Type) where T: NibLoadableView {
         let bundle = Bundle(for: T.self)
         let nib = UINib(nibName: T.nibName, bundle: bundle)
 
         self.register(nib, forCellWithReuseIdentifier: T.defaultReuseIdentifier)
     }
 
-    func dequeueReusableCell<T: UICollectionViewCell>(forIndexPath indexPath: IndexPath) -> T where T: ReusableView {
+    func dequeueReusableCell<T: UICollectionViewCell>(forIndexPath indexPath: IndexPath) -> T {
         let reuseIdentifier = T.defaultReuseIdentifier
         guard
             let cell = self.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? T

@@ -1,22 +1,23 @@
 # CHANGELOG
 
+## 3.2.0
+- Swift 4.2 version.
+
 ## 3.1.0
-Swift 3.0 version.
+- Swift 3.0 version.
 
 ## 3.0.0
-Swift 2.1 version.
+- Swift 2.1 version.
 
 ## 2.0.0
-Carthage support.
-Swift compatible.
+- Carthage support.
+- Swift compatible.
 
 ## 1.1.0
-Added Xcode 6.4 support.
+- Added Xcode 6.4 support.
 
 ## 1.0.1
-
-Change pod structure.
+- Change pod structure.
 
 ## 1.0.0
-
-Initial release.
+- Initial release.

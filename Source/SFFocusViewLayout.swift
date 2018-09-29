@@ -86,7 +86,7 @@ open class SFFocusViewLayout: UICollectionViewLayout {
 
         // last rect will be used to calculate frames past the first one.  We initialize it to a non junk 0 value
         var frame = CGRect()
-        var y: CGFloat = 0
+        var yOrigin: CGFloat = 0
 
         for item in 0..<numberOfItems {
             let indexPath = IndexPath(item: item, section: 0)
@@ -100,21 +100,21 @@ open class SFFocusViewLayout: UICollectionViewLayout {
 
             if indexPath.item == currentFocusedItemIndex {
                 // The featured cell
-                y = yOffset - standardHeight * nextItemPercentageOffset
+                yOrigin = yOffset - standardHeight * nextItemPercentageOffset
                 height = focusedHeight
             } else if indexPath.item == (currentFocusedItemIndex + 1) && indexPath.item != numberOfItems {
                 // The cell directly below the featured cell, which grows as the user scrolls
-                let maxY = y + standardHeight
+                let maxY = yOrigin + standardHeight
                 height = standardHeight + max((focusedHeight - standardHeight) * nextItemPercentageOffset, 0)
-                y = maxY - height
+                yOrigin = maxY - height
             } else {
-                y = frame.origin.y + frame.size.height
+                yOrigin = frame.origin.y + frame.size.height
             }
 
-            frame = CGRect(x: 0, y: y, width: width, height: height)
+            frame = CGRect(x: 0, y: yOrigin, width: width, height: height)
             attributes.frame = frame
             cached.append(attributes)
-            y = frame.maxY
+            yOrigin = frame.maxY
         }
     }
 

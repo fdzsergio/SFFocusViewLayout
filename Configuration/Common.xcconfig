@@ -27,13 +27,19 @@ CLANG_ENABLE_MODULES = YES
 // Enable ARC
 CLANG_ENABLE_OBJC_ARC = YES
 
+CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES
+
 // Warn about implicit conversions to boolean values that are suspicious.
 // For example, writing 'if (foo)' with 'foo' being the name a function will trigger a warning.
 CLANG_WARN_BOOL_CONVERSION = YES
 
+CLANG_WARN_COMMA = YES
+
 // Warn about implicit conversions of constant values that cause the constant value to change,
 // either through a loss of precision, or entirely in its meaning.
 CLANG_WARN_CONSTANT_CONVERSION = YES
+
+CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES
 
 // Whether to warn when overriding deprecated methods
 CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES
@@ -58,8 +64,15 @@ CLANG_WARN_IMPLICIT_SIGN_CONVERSION = NO
 // For example, this can catch issues when one incorrectly intermixes using NSNumbers and raw integers.
 CLANG_WARN_INT_CONVERSION = YES
 
+CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES
+CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES
+CLANG_WARN_OBJC_LITERAL_CONVERSION = YES
+
 // Warn about implicit capture of self (e.g. direct ivar access)
 CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES
+
+CLANG_WARN_RANGE_LOOP_ANALYSIS = YES
+CLANG_WARN_STRICT_PROTOTYPES = YES
 
 // Don't warn about repeatedly using a weak reference without assigning the weak reference to a strong reference. Too many false positives.
 CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = NO

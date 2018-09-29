@@ -14,7 +14,7 @@ struct Repository: DataSource {
 }
 
 private extension Repository {
-    
+
     static var resources: [Resource] {
         guard
             let fileURL = Bundle.main
@@ -23,8 +23,8 @@ private extension Repository {
         else {
                 fatalError("resource file not found")
         }
-        
-        return resources.flatMap(Parser.map)
+
+        return resources.compactMap(Parser.map)
     }
 
     private struct Constant {

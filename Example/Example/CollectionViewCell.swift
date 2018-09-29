@@ -68,4 +68,4 @@ private extension CollectionViewCell {
     }
 }
 
-extension CollectionViewCell : NibLoadableView { }
+extension CollectionViewCell: NibLoadableView {}

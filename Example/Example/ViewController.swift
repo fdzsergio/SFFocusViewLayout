@@ -24,7 +24,7 @@ final class ViewController: UIViewController {
 
         collectionView.register(CollectionViewCell.self)
 
-        collectionView.decelerationRate = UIScrollViewDecelerationRateFast
+        collectionView.decelerationRate = .fast
         collectionView.backgroundColor = UIColor(red: 51/255, green: 55/255, blue: 61/255, alpha: 1)
     }
 
@@ -32,7 +32,7 @@ final class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
 
-    override var preferredStatusBarStyle : UIStatusBarStyle {
+    override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
 }
@@ -43,12 +43,14 @@ extension ViewController: UICollectionViewDataSource {
         return repository.count
     }
 
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView,
+                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         return collectionView.dequeueReusableCell(forIndexPath: indexPath) as CollectionViewCell
     }
 
-    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-
+    func collectionView(_ collectionView: UICollectionView,
+                        willDisplay cell: UICollectionViewCell,
+                        forItemAt indexPath: IndexPath) {
         guard
             let cell = cell as? CollectionViewCellInterface
         else {

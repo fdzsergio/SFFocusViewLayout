@@ -2,7 +2,7 @@
 
 [![Travis CI](https://travis-ci.org/fdzsergio/SFFocusViewLayout.svg?branch=master)](https://travis-ci.org/fdzsergio/SFFocusViewLayout)
 [![codecov.io](https://codecov.io/github/fdzsergio/SFFocusViewLayout/coverage.svg?branch=master)](https://codecov.io/github/fdzsergio/SFFocusViewLayout?branch=master)
-[![Swift Version](https://img.shields.io/badge/Swift-3.1.x-orange.svg)]()
+[![Swift Version](https://img.shields.io/badge/Swift-4.2.x-orange.svg)]()
 [![Version](https://img.shields.io/cocoapods/v/SFFocusViewLayout.svg?style=flat)](http://cocoapods.org/pods/SFFocusViewLayout)
 [![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)

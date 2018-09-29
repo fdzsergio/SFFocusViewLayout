@@ -186,7 +186,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = fdzsergio;
 				TargetAttributes = {
 					E70906861C5C30D7001D547B = {
@@ -299,11 +299,33 @@
 			};
 			name = Release;
 		};
+		E72C40FC215FD741007635DF /* Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E74D9E601EB8D137000EE828 /* Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Test;
+		};
+		E72C40FD215FD741007635DF /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Source/Info.plist;
+			};
+			name = Test;
+		};
+		E72C40FE215FD741007635DF /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Tests/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fdzsergio.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Test;
+		};
 		E766BC991C5BE5330036C384 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E74D9E601EB8D137000EE828 /* Debug.xcconfig */;
 			buildSettings = {
-				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -311,7 +333,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E74D9E621EB8D137000EE828 /* Release.xcconfig */;
 			buildSettings = {
-				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -319,8 +340,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = Source/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fdzsergio.SFFocusViewLayout;
-				PRODUCT_NAME = SFFocusViewLayout;
 			};
 			name = Debug;
 		};
@@ -328,8 +347,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = Source/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fdzsergio.SFFocusViewLayout;
-				PRODUCT_NAME = SFFocusViewLayout;
 			};
 			name = Release;
 		};
@@ -340,6 +357,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E709068F1C5C30D7001D547B /* Debug */,
+				E72C40FE215FD741007635DF /* Test */,
 				E70906901C5C30D7001D547B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -349,6 +367,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E766BC991C5BE5330036C384 /* Debug */,
+				E72C40FC215FD741007635DF /* Test */,
 				E766BC9A1C5BE5330036C384 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -358,6 +377,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E766BC9C1C5BE5330036C384 /* Debug */,
+				E72C40FD215FD741007635DF /* Test */,
 				E766BC9D1C5BE5330036C384 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;

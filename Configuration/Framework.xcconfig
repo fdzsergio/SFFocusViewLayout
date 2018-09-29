@@ -37,10 +37,14 @@ SKIP_INSTALL = YES
 APPLICATION_EXTENSION_API_ONLY = NO
 
 // Configuration swift version
-SWIFT_VERSION = 3.0
+SWIFT_VERSION = 4.2
+
+SWIFT_COMPILATION_MODE = wholemodule
 
 // Always embed Swift std libs
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+
+SDKROOT = iphoneos
 
 // Universal framework
 SUPPORTED_PLATFORMS                    = iphonesimulator iphoneos appletvos appletvsimulator
@@ -70,3 +74,7 @@ ENABLE_BITCODE[sdk=appletv*]                  = YES
 
 // iOS-specific deployment target
 IPHONEOS_DEPLOYMENT_TARGET = 8.0
+
+// Product Configuration
+PRODUCT_BUNDLE_IDENTIFIER = com.fdzsergio.SFFocusViewLayout
+PRODUCT_NAME = SFFocusViewLayout
